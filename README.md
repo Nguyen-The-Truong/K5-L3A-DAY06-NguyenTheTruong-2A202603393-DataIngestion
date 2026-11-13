@@ -52,7 +52,7 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 
 **Corpus:** *Principles of Data Science* (OpenStax, CC BY-NC-SA 4.0), Chương 2 và 3, 74 trang nội dung (`data/manifest.json`). PDF **không** nằm trong repo.
 **Stack:** `intfloat/multilingual-e5-small` (local, 384 chiều) + Chroma 1.5.9 (lưu tại `starter/chroma_db/`, cosine). Không cần Docker hay API key.
-**Báo cáo:** [report/individual/2A2026033933_NguyenTheTruong.md](report/individual/2A2026033933_NguyenTheTruong.md) — các nhãn trong `results/audit/` do Claude đề xuất và được tác giả nhận làm nhãn của mình (nguy cơ thiên lệch được nêu trong báo cáo).
+**Báo cáo:** [report/individual/2A202603393_NguyenTheTruong.md](report/individual/2A202603393_NguyenTheTruong.md) — các nhãn trong `results/audit/` do Claude đề xuất và được tác giả nhận làm nhãn của mình (nguy cơ thiên lệch được nêu trong báo cáo).
 
 ### Setup và chạy (từ thư mục gốc repo, Python 3.10+)
 
