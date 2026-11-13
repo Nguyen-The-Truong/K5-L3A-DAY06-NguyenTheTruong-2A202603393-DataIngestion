@@ -1,0 +1,91 @@
+INFO sentence_transformers.base.model: No device provided, using cpu
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/modules.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Fmodules.json=&etag=%22ac2039abdf6ff023b27c919bb9675cfe378cb10f%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/modules.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Fmodules.json=&etag=%22ac2039abdf6ff023b27c919bb9675cfe378cb10f%22 "HTTP/1.1 200 OK"
+C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Admin\.cache\huggingface\hub\models--intfloat--multilingual-e5-small. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/config_sentence_transformers.json "HTTP/1.1 404 Not Found"
+INFO sentence_transformers.base.model: Loading SentenceTransformer model from intfloat/multilingual-e5-small.
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/config_sentence_transformers.json "HTTP/1.1 404 Not Found"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2FREADME.md=&etag=%22e56327af55e9742caf76bff9ba83b6904cd2003d%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/README.md?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2FREADME.md=&etag=%22e56327af55e9742caf76bff9ba83b6904cd2003d%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/sentence_bert_config.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Fsentence_bert_config.json=&etag=%224eca68d85ecd3034cf4174d8a4033a75344ea62d%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/sentence_bert_config.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Fsentence_bert_config.json=&etag=%224eca68d85ecd3034cf4174d8a4033a75344ea62d%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/config.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Fconfig.json=&etag=%2260a2a84020f1d74cc53ea9e8c4e91cf4af6c2b68%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/config.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Fconfig.json=&etag=%2260a2a84020f1d74cc53ea9e8c4e91cf4af6c2b68%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/model.safetensors "HTTP/1.1 302 Found"
+C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Admin\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small/xet-read-token/614241f622f53c4eeff9890bdc4f31cfecc418b3 "HTTP/1.1 200 OK"
+corpus: 74 content pages, 83 units, 195735 chars
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  24%|██▎       | 47/199 [00:00<00:00, 469.83it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1748.02it/s]
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/processor_config.json "HTTP/1.1 404 Not Found"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/tokenizer_config.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Ftokenizer_config.json=&etag=%22059214673d9d6d2ee319411e2ffec8c024b816d5%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/tokenizer_config.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Ftokenizer_config.json=&etag=%22059214673d9d6d2ee319411e2ffec8c024b816d5%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/sentencepiece.bpe.model "HTTP/1.1 302 Found"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/tokenizer.json "HTTP/1.1 302 Found"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/added_tokens.json "HTTP/1.1 404 Not Found"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/special_tokens_map.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Fspecial_tokens_map.json=&etag=%22e0b1d18ecd0ae4ff1d47bd297d910c0cf83e504b%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/special_tokens_map.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2Fspecial_tokens_map.json=&etag=%22e0b1d18ecd0ae4ff1d47bd297d910c0cf83e504b%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/chat_template.jinja "HTTP/1.1 404 Not Found"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/models/intfloat/multilingual-e5-small "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/1_Pooling%2Fconfig.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2F1_Pooling%2Fconfig.json=&etag=%22acbd4014202bf4dbc6c03229bcbeef7c4feafb58%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/intfloat/multilingual-e5-small/614241f622f53c4eeff9890bdc4f31cfecc418b3/1_Pooling%2Fconfig.json?%2Fintfloat%2Fmultilingual-e5-small%2Fresolve%2F614241f622f53c4eeff9890bdc4f31cfecc418b3%2F1_Pooling%2Fconfig.json=&etag=%22acbd4014202bf4dbc6c03229bcbeef7c4feafb58%22 "HTTP/1.1 200 OK"
+INFO httpx2: HTTP Request: HEAD https://huggingface.co/intfloat/multilingual-e5-small/resolve/614241f622f53c4eeff9890bdc4f31cfecc418b3/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+C:\Users\Admin\OneDrive\Desktop\VinAI\Lab-Day06\K5-L3A-DAY06-NguyenTheTruong-2A2026033933-DataIngestion\starter\src\embeddings.py:28: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dimensions = int(self._model.get_sentence_embedding_dimension())
+embedder: intfloat/multilingual-e5-small dims=384 max_seq=512
+A {'chunks': 466, 'total_chars': 213813, 'min': 5, 'max': 500, 'mean': 458.8, 'median': 500.0, 'stdev': 103.7, 'chunk_seconds': 0.01, 'embed_seconds': 9.62, 'store_seconds_incl_reingest': 3.25, 'ingest_seconds': 9.63, 'cost_usd': 0.0, 'count_after_first_ingest': 466, 'count_after_reingest': 466, 'reingest_removed': 0, 'first_removed': 0}
+B {'chunks': 271, 'total_chars': 195382, 'min': 5, 'max': 1000, 'mean': 721.0, 'median': 812, 'stdev': 255.9, 'chunk_seconds': 0.0, 'embed_seconds': 9.31, 'store_seconds_incl_reingest': 0.91, 'ingest_seconds': 9.32, 'cost_usd': 0.0, 'count_after_first_ingest': 271, 'count_after_reingest': 271, 'reingest_removed': 0, 'first_removed': 0}
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 33.81it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 26.24it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 60.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 47.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 58.82it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 59.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 62.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 51.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 58.23it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 52.34it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 52.68it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 48.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 53.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 63.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 66.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 66.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 71.53it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 39.93it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 37.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 45.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 58.83it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 35.58it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 58.81it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 57.58it/s]
+
+METRICS (n/N)
+  A dev  Hit@1 6/16  Hit@3 10/16  page_hit3(diag) 14/16  filter_compliant 0/0
+  A test Hit@1 8/8  Hit@3 8/8  page_hit3(diag) 8/8  filter_compliant 0/0
+  A all  Hit@1 14/24  Hit@3 18/24  page_hit3(diag) 22/24  filter_compliant 0/0
+  B dev  Hit@1 9/16  Hit@3 12/16  page_hit3(diag) 13/16  filter_compliant 0/0
+  B test Hit@1 6/8  Hit@3 8/8  page_hit3(diag) 8/8  filter_compliant 0/0
+  B all  Hit@1 15/24  Hit@3 20/24  page_hit3(diag) 21/24  filter_compliant 0/0
+  C dev  Hit@1 9/16  Hit@3 13/16  page_hit3(diag) 14/16  filter_compliant 3/3
+  C test Hit@1 6/8  Hit@3 8/8  page_hit3(diag) 8/8  filter_compliant 2/2
+  C all  Hit@1 15/24  Hit@3 21/24  page_hit3(diag) 22/24  filter_compliant 5/5

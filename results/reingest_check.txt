@@ -1,0 +1,4 @@
+after first ingest   : 3
+after identical rerun: 3
+after changed version: 2 removed: 1
+filter+search works  : doc:c1 2.1

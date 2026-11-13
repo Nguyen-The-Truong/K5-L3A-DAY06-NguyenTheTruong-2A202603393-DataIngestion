@@ -1,0 +1,300 @@
+[
+  {
+    "id": "d01",
+    "split": "dev",
+    "type": "direct",
+    "topic": "2.1 data types",
+    "question": "What is observational data and how is it collected?",
+    "expected_answer": "Data collected by systematically observing and recording behavior without the researcher actively participating.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 68,
+    "evidence_quote": "Observational data, often used in qualitative research, is collected by systematically observing and recording behavior without the active participation of the researcher.",
+    "filter": null
+  },
+  {
+    "id": "d02",
+    "split": "dev",
+    "type": "paraphrase",
+    "topic": "2.1 data types",
+    "question": "What kind of data covers customer purchases, website clicks and user interactions?",
+    "expected_answer": "Transactional data.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 69,
+    "evidence_quote": "It can include financial data, but it also includes data related to customer purchases, website clicks, user interactions, or any other type of activity that is recorded and tracked.",
+    "filter": null
+  },
+  {
+    "id": "d03",
+    "split": "dev",
+    "type": "direct",
+    "topic": "2.2 survey bias",
+    "question": "What went wrong with the 1936 Literary Digest poll?",
+    "expected_answer": "Its mailing list of phone and car owners was biased toward affluent individuals, so it favored Republican voters.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 72,
+    "evidence_quote": "This approach was considered biased toward affluent individuals and therefore favored Republican voters.",
+    "filter": null
+  },
+  {
+    "id": "d04",
+    "split": "dev",
+    "type": "conditional",
+    "topic": "2.2 survey design",
+    "question": "Why should a survey questionnaire be pilot tested before it is administered widely?",
+    "expected_answer": "A pilot test with a small group from the target population reveals problems or confusion in the questions so they can be fixed.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 71,
+    "evidence_quote": "the survey questionnaire should undergo a pilot test with a small group of individuals from the target population",
+    "filter": null
+  },
+  {
+    "id": "d05",
+    "split": "dev",
+    "type": "direct",
+    "topic": "2.3 APIs",
+    "question": "What is an application programming interface (API)?",
+    "expected_answer": "A set of protocols, tools and definitions for building software applications that lets different systems communicate.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 76,
+    "evidence_quote": "An application programming interface (API) is a set of protocols, tools, and definitions for building software applications",
+    "filter": null
+  },
+  {
+    "id": "d06",
+    "split": "dev",
+    "type": "paraphrase",
+    "topic": "2.3 scraping techniques",
+    "question": "Which web scraping technique is useful for extracting dates, phone numbers or email addresses?",
+    "expected_answer": "Regular expressions.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 77,
+    "evidence_quote": "Useful for scraping data that follows a particular format, such as dates, phone numbers, or email addresses",
+    "filter": null
+  },
+  {
+    "id": "d07",
+    "split": "dev",
+    "type": "direct",
+    "topic": "2.4 missing data",
+    "question": "What does MCAR mean for missing data?",
+    "expected_answer": "Missing completely at random: missing data not related to any other variables, with no underlying cause for its absence.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 87,
+    "evidence_quote": "MCAR (missing completely at random) data is missing data not related to any other variables, with no underlying cause for its absence.",
+    "filter": null
+  },
+  {
+    "id": "d08",
+    "split": "dev",
+    "type": "conditional",
+    "topic": "2.4 normalization",
+    "question": "Why should outliers be removed before applying the normalization formula?",
+    "expected_answer": "Outliers can significantly affect the minimum and maximum values used to scale the data.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 91,
+    "evidence_quote": "it is important to first remove any outliers from the dataset before performing normalization",
+    "filter": null
+  },
+  {
+    "id": "d09",
+    "split": "dev",
+    "type": "direct",
+    "topic": "2.5 chunking",
+    "question": "How does data chunking improve fault tolerance?",
+    "expected_answer": "If data is corrupted or lost, only the affected chunk has to be retrieved rather than the entire dataset.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 100,
+    "evidence_quote": "data chunking allows for the retrieval of only the affected chunk rather than the entire dataset",
+    "filter": null
+  },
+  {
+    "id": "d10",
+    "split": "dev",
+    "type": "direct",
+    "topic": "3.1 sample vs population",
+    "question": "What is the difference between sample data and population data?",
+    "expected_answer": "Population data covers all outcomes of interest; sample data is collected from a subset of the population.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 115,
+    "evidence_quote": "Sample data represents outcomes or measurements collected from a subset, or part, of the population of interest.",
+    "filter": null
+  },
+  {
+    "id": "d11",
+    "split": "dev",
+    "type": "filter",
+    "topic": "3.1 outliers (confusable with 2.4, 3.3)",
+    "question": "Which measure of the center is used when outliers skew the mean?",
+    "expected_answer": "The trimmed mean.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 114,
+    "evidence_quote": "In these instances, the trimmed mean is often used to provide a more representative measure of the center of the dataset",
+    "filter": {
+      "section": "3.1"
+    }
+  },
+  {
+    "id": "d12",
+    "split": "dev",
+    "type": "direct",
+    "topic": "3.2 range",
+    "question": "Why is the range a weak measure of variation?",
+    "expected_answer": "It uses only the minimum and maximum, and outliers can skew it.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 121,
+    "evidence_quote": "the range is influenced by outliers since an outlier might appear as a minimum or maximum data value and thus skew the results",
+    "filter": null
+  },
+  {
+    "id": "d13",
+    "split": "dev",
+    "type": "paraphrase",
+    "topic": "3.2 variation",
+    "question": "Why is it not enough to report only the mean of a dataset?",
+    "expected_answer": "Datasets with the same mean can have very different spread, so a measure of variation is also needed.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 121,
+    "evidence_quote": "publishing the mean of a dataset is often inadequate to fully communicate the characteristics of the dataset",
+    "filter": null
+  },
+  {
+    "id": "d14",
+    "split": "dev",
+    "type": "direct",
+    "topic": "3.4 terminology",
+    "question": "What is the sample space in a probability experiment?",
+    "expected_answer": "The set of all possible outcomes.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 130,
+    "evidence_quote": "The sample space is the set of all possible outcomes in a probability experiment.",
+    "filter": null
+  },
+  {
+    "id": "d15",
+    "split": "dev",
+    "type": "filter",
+    "topic": "2.4 outliers (confusable with 3.1, 3.3)",
+    "question": "How can outliers be identified?",
+    "expected_answer": "With visualizations such as scatterplots, box plots, IQR or histograms, or statistics such as mean, median and standard deviation.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 87,
+    "evidence_quote": "This can be done through visualization techniques, such as scatterplots, box plots, IQR (interquartile range), or histograms",
+    "filter": {
+      "section": "2.4"
+    }
+  },
+  {
+    "id": "d16",
+    "split": "dev",
+    "type": "filter",
+    "topic": "2.2 sampling (confusable with 3.1)",
+    "question": "What is sampling?",
+    "expected_answer": "Selecting a subset of a larger population to represent and analyze that population.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 71,
+    "evidence_quote": "Sampling is the process of selecting a subset of a larger population to represent and analyze information about that population.",
+    "filter": {
+      "chapter": 2
+    }
+  },
+  {
+    "id": "t01",
+    "split": "test",
+    "type": "direct",
+    "topic": "2.2 sampling techniques",
+    "question": "What is stratified sampling?",
+    "expected_answer": "Splitting the population into subgroups and taking a random sample from each stratum in proportion to its size.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 73,
+    "evidence_quote": "Stratified sampling involves splitting the population into subgroups based on specified factors, such as age, area, income, or education level, and taking a random sample from each stratum in proportion to its size in the population.",
+    "filter": null
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "type": "conditional",
+    "topic": "2.2 sampling techniques",
+    "question": "What is the main drawback of convenience sampling?",
+    "expected_answer": "It may not be representative because it is prone to selection bias.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 73,
+    "evidence_quote": "However, it may not provide a representative sample as it is prone to selection bias",
+    "filter": null
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "type": "paraphrase",
+    "topic": "2.5 compression",
+    "question": "Which type of data compression permanently removes data considered irrelevant or redundant?",
+    "expected_answer": "Lossy compression.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 98,
+    "evidence_quote": "Lossy compression reduces the size of data by permanently extracting particular data that is considered irrelevant or redundant.",
+    "filter": null
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "type": "filter",
+    "topic": "3.3 IQR outliers (confusable with 2.4)",
+    "question": "What cutoff value is typically used with the IQR to identify outliers?",
+    "expected_answer": "1.5.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 127,
+    "evidence_quote": "These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset.",
+    "filter": {
+      "section": "3.3"
+    }
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "type": "filter",
+    "topic": "3.3 z-scores",
+    "question": "Which z-score values are used to flag outliers?",
+    "expected_answer": "A z-score less than -3 or greater than +3.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 128,
+    "evidence_quote": "greater than +3 can be used to flag outliers",
+    "filter": {
+      "section": "3.3"
+    }
+  },
+  {
+    "id": "t06",
+    "split": "test",
+    "type": "direct",
+    "topic": "3.4 complement",
+    "question": "How do you find the probability of the complement of an event?",
+    "expected_answer": "Subtract the probability of the event from 1.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 131,
+    "evidence_quote": "subtract the probability of Event from 1",
+    "filter": null
+  },
+  {
+    "id": "t07",
+    "split": "test",
+    "type": "paraphrase",
+    "topic": "3.4 probability range",
+    "question": "Can a probability be greater than 1 or negative?",
+    "expected_answer": "No; a probability must be between 0 and 1 inclusive.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 131,
+    "evidence_quote": "A probability greater than 1 is not possible, and a negative probability is not possible.",
+    "filter": null
+  },
+  {
+    "id": "t08",
+    "split": "test",
+    "type": "conditional",
+    "topic": "2.4 transformation",
+    "question": "When is a log transformation typically used?",
+    "expected_answer": "When the data is highly skewed.",
+    "gold_source_id": "pds-openstax-2025",
+    "gold_page": 92,
+    "evidence_quote": "Log transformation is often used when the data is highly skewed",
+    "filter": null
+  }
+]

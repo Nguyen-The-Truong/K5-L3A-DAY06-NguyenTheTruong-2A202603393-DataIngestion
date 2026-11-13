@@ -1,0 +1,177 @@
+{
+  "source_id": "pds-openstax-2025",
+  "title": "Principles of Data Science (OpenStax)",
+  "authors": "Dr. Shaun V. Ault, Dr. Soohyun Kim, Dr. Larry Musolino, Dr. Nikolaus Pesendorfer (OpenStax)",
+  "source_path_or_url": "data/raw/principles-of-data-science.pdf",
+  "download_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Principles-of-Data-Science-WEB.pdf",
+  "landing_page": "https://openstax.org/details/books/principles-data-science",
+  "license_or_permission": "CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/), per the OpenStax CMS API. Non-commercial use for this lab. The PDF is NOT committed to the repo.",
+  "publish_date": "2025-01-24 (OpenStax CMS metadata)",
+  "accessed_at": "2026-11-13",
+  "pdf_physical_pages": 569,
+  "page_numbering": "page = physical PDF page (1-based). Printed page number = physical page - 10.",
+  "page_counting_rule": "Content pages = every physical page from each chapter's first page up to, but excluding, its 'Key Terms' page (per PDF outline). Chapters 2 and 3 only. Excluded: Key Terms, Group Project, Critical Thinking, Quantitative Problems, References, other chapters. Running headers/footers removed.",
+  "chapters": {
+    "2": {
+      "title": "Collecting and Preparing Data",
+      "first_page": 67,
+      "last_page": 103,
+      "pages_extracted": 37,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Overview of Data Collection Methods",
+          "start_page": 68
+        },
+        {
+          "id": "2.2",
+          "title": "Survey Design and Implementation",
+          "start_page": 71
+        },
+        {
+          "id": "2.3",
+          "title": "Web Scraping and Social Media Data Collection",
+          "start_page": 76
+        },
+        {
+          "id": "2.4",
+          "title": "Data Cleaning and Preprocessing",
+          "start_page": 86
+        },
+        {
+          "id": "2.5",
+          "title": "Handling Large Datasets",
+          "start_page": 98
+        }
+      ]
+    },
+    "3": {
+      "title": "Descriptive Statistics: Statistical Measurements and Probability Distributions",
+      "first_page": 113,
+      "last_page": 149,
+      "pages_extracted": 37,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Measures of Center",
+          "start_page": 114
+        },
+        {
+          "id": "3.2",
+          "title": "Measures of Variation",
+          "start_page": 120
+        },
+        {
+          "id": "3.3",
+          "title": "Measures of Position",
+          "start_page": 125
+        },
+        {
+          "id": "3.4",
+          "title": "Probability Theory",
+          "start_page": 129
+        },
+        {
+          "id": "3.5",
+          "title": "Discrete and Continuous Probability Distributions",
+          "start_page": 137
+        }
+      ]
+    }
+  },
+  "content_pages": 74,
+  "content_units": 83,
+  "total_normalized_chars": 195735,
+  "chars_per_page": {
+    "67": 2365,
+    "68": 3499,
+    "69": 2916,
+    "70": 3291,
+    "71": 3797,
+    "72": 4302,
+    "73": 4409,
+    "74": 4412,
+    "75": 4173,
+    "76": 3293,
+    "77": 2752,
+    "78": 3715,
+    "79": 1027,
+    "80": 2155,
+    "81": 2535,
+    "82": 3176,
+    "83": 2731,
+    "84": 2601,
+    "85": 1490,
+    "86": 3600,
+    "87": 4167,
+    "88": 1467,
+    "89": 1053,
+    "90": 3216,
+    "91": 2741,
+    "92": 3106,
+    "93": 3385,
+    "94": 4967,
+    "95": 1768,
+    "96": 1882,
+    "97": 3132,
+    "98": 3872,
+    "99": 3260,
+    "100": 2949,
+    "101": 3381,
+    "102": 3418,
+    "103": 1253,
+    "113": 2149,
+    "114": 3903,
+    "115": 2514,
+    "116": 1495,
+    "117": 2417,
+    "118": 2642,
+    "119": 2389,
+    "120": 2262,
+    "121": 1972,
+    "122": 2536,
+    "123": 2106,
+    "124": 1612,
+    "125": 2603,
+    "126": 2271,
+    "127": 2428,
+    "128": 2263,
+    "129": 1544,
+    "130": 2767,
+    "131": 2207,
+    "132": 2609,
+    "133": 2186,
+    "134": 1629,
+    "135": 2533,
+    "136": 2213,
+    "137": 2851,
+    "138": 2196,
+    "139": 3908,
+    "140": 2756,
+    "141": 1365,
+    "142": 2998,
+    "143": 2118,
+    "144": 3082,
+    "145": 1661,
+    "146": 2553,
+    "147": 1680,
+    "148": 2056,
+    "149": 5
+  },
+  "metadata_fields": {
+    "document_id": "str, constant source id",
+    "source": "str, file path",
+    "page": "int, physical PDF page (trace to source)",
+    "chapter": "int, from PDF outline",
+    "section": "str e.g. '3.3', section heading in effect (from PDF outline; '2.0'/'3.0' = chapter intro)",
+    "section_title": "str",
+    "unit_id": "str, page+section unit",
+    "chunk_index": "int",
+    "n_chars": "int"
+  },
+  "known_limits": [
+    "Mathematical formulas and symbols are images/glyphs and are missing from the extracted text.",
+    "Figures are not extracted (text only); tables are linearised in reading order.",
+    "Line-end hyphen joins may merge a few real hyphenated compounds."
+  ]
+}

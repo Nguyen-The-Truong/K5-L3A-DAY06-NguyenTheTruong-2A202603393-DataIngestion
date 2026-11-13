@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size (chars; per page/section unit),500,50,"document_id,source,page,chapter,section,section_title",none,intfloat/multilingual-e5-small (384d; 'passage: '/'query: '),"Baseline: short fixed windows are precise for one-sentence evidence but cut ideas mid-sentence",6/16,10/16,8/8,8/8,"466 chunks; mean 458.8 chars; ingest 9.6s then 18.8s on rerun (timing varies ~2x); cost 0; coherence 0.90/2 (n=10)"
+B,by_paragraph (pack whole paragraphs; split oversized by sentence),1000 (max),n/a,"document_id,source,page,chapter,section,section_title",none,intfloat/multilingual-e5-small (384d; 'passage: '/'query: '),"Changing only chunking (A->B): paragraph chunks keep ideas whole (better coherence/hit) but may dilute precision",9/16,12/16,6/8,8/8,"271 chunks; mean 721.0 chars; ingest 9.3s then 17.5s on rerun (timing varies ~2x); cost 0; coherence 1.40/2 (n=10)"
+C,same index as B,1000 (max),n/a,"document_id,source,page,chapter,section,section_title","section or chapter equality, only for the 5/24 questions that carry a filter",intfloat/multilingual-e5-small (384d; 'passage: '/'query: '),"Changing only the filter (B->C): metadata filter removes confusable sections (outliers appear in 2.4/3.1/3.3)",9/16,13/16,6/8,8/8,"reuses B's collection; filter compliance 5/5 (3 dev + 2 test); +1 dev Hit@3 (d15) vs B; test unchanged (ceiling)"

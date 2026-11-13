@@ -1,0 +1,169 @@
+{
+  "started_utc": "2026-11-13T06:21:21+00:00",
+  "model": "intfloat/multilingual-e5-small",
+  "dimensions": 384,
+  "max_seq_length": 512,
+  "document_prefix": "passage: ",
+  "query_prefix": "query: ",
+  "vector_store": "Chroma persistent client, HNSW (approximate), cosine",
+  "chroma_dir": "starter/chroma_db",
+  "versions": {
+    "chromadb": "1.5.9",
+    "sentence-transformers": "6.3.0",
+    "torch": "2.14.1",
+    "pymupdf": "1.28.2"
+  },
+  "top_k": 3,
+  "config": {
+    "A": {
+      "chunking": "fixed_size",
+      "chunk_size": 500,
+      "overlap": 50,
+      "collection": "A",
+      "filter": false
+    },
+    "B": {
+      "chunking": "by_paragraph",
+      "max_size": 1000,
+      "collection": "B",
+      "filter": false
+    },
+    "C": {
+      "chunking": "by_paragraph",
+      "max_size": 1000,
+      "collection": "B",
+      "filter": true
+    }
+  },
+  "ingest": {
+    "A": {
+      "chunks": 466,
+      "total_chars": 213813,
+      "min": 5,
+      "max": 500,
+      "mean": 458.8,
+      "median": 500.0,
+      "stdev": 103.7,
+      "chunk_seconds": 0.01,
+      "embed_seconds": 18.8,
+      "store_seconds_incl_reingest": 2.12,
+      "ingest_seconds": 18.82,
+      "cost_usd": 0.0,
+      "count_after_first_ingest": 466,
+      "count_after_reingest": 466,
+      "reingest_removed": 0,
+      "first_removed": 0
+    },
+    "B": {
+      "chunks": 271,
+      "total_chars": 195382,
+      "min": 5,
+      "max": 1000,
+      "mean": 721.0,
+      "median": 812,
+      "stdev": 255.9,
+      "chunk_seconds": 0.0,
+      "embed_seconds": 17.51,
+      "store_seconds_incl_reingest": 1.06,
+      "ingest_seconds": 17.52,
+      "cost_usd": 0.0,
+      "count_after_first_ingest": 271,
+      "count_after_reingest": 271,
+      "reingest_removed": 0,
+      "first_removed": 0
+    },
+    "C": {
+      "note": "C reuses B's collection (identical chunks/vectors); only the query filter differs.",
+      "chunks": 271
+    }
+  },
+  "load_corpus_seconds": 0.2,
+  "query_embed_seconds_all_questions": 0.99,
+  "retrieval_seconds_per_strategy": {
+    "A": 0.114,
+    "B": 0.079,
+    "C": 0.09
+  },
+  "metrics": {
+    "A": {
+      "dev": {
+        "N": 16,
+        "hit1": 6,
+        "hit3": 10,
+        "page_hit3_diagnostic": 14,
+        "filtered_questions": 0,
+        "filter_compliant_top3": 0
+      },
+      "test": {
+        "N": 8,
+        "hit1": 8,
+        "hit3": 8,
+        "page_hit3_diagnostic": 8,
+        "filtered_questions": 0,
+        "filter_compliant_top3": 0
+      },
+      "all": {
+        "N": 24,
+        "hit1": 14,
+        "hit3": 18,
+        "page_hit3_diagnostic": 22,
+        "filtered_questions": 0,
+        "filter_compliant_top3": 0
+      }
+    },
+    "B": {
+      "dev": {
+        "N": 16,
+        "hit1": 9,
+        "hit3": 12,
+        "page_hit3_diagnostic": 13,
+        "filtered_questions": 0,
+        "filter_compliant_top3": 0
+      },
+      "test": {
+        "N": 8,
+        "hit1": 6,
+        "hit3": 8,
+        "page_hit3_diagnostic": 8,
+        "filtered_questions": 0,
+        "filter_compliant_top3": 0
+      },
+      "all": {
+        "N": 24,
+        "hit1": 15,
+        "hit3": 20,
+        "page_hit3_diagnostic": 21,
+        "filtered_questions": 0,
+        "filter_compliant_top3": 0
+      }
+    },
+    "C": {
+      "dev": {
+        "N": 16,
+        "hit1": 9,
+        "hit3": 13,
+        "page_hit3_diagnostic": 14,
+        "filtered_questions": 3,
+        "filter_compliant_top3": 3
+      },
+      "test": {
+        "N": 8,
+        "hit1": 6,
+        "hit3": 8,
+        "page_hit3_diagnostic": 8,
+        "filtered_questions": 2,
+        "filter_compliant_top3": 2
+      },
+      "all": {
+        "N": 24,
+        "hit1": 15,
+        "hit3": 21,
+        "page_hit3_diagnostic": 22,
+        "filtered_questions": 5,
+        "filter_compliant_top3": 5
+      }
+    }
+  },
+  "n_questions": 24,
+  "cost_usd": 0.0
+}

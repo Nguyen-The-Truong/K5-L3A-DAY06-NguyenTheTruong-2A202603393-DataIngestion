@@ -45,3 +45,28 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+---
+
+## Bài làm (Nguyễn Thế Trường — Day 06)
+
+**Corpus:** *Principles of Data Science* (OpenStax, CC BY-NC-SA 4.0), Chương 2 và 3, 74 trang nội dung (`data/manifest.json`). PDF **không** nằm trong repo.
+**Stack:** `intfloat/multilingual-e5-small` (local, 384 chiều) + Chroma 1.5.9 (lưu tại `starter/chroma_db/`, cosine). Không cần Docker hay API key.
+**Báo cáo:** [report/individual/2A2026033933_NguyenTheTruong.md](report/individual/2A2026033933_NguyenTheTruong.md) — các nhãn trong `results/audit/` do Claude đề xuất và được tác giả nhận làm nhãn của mình (nguy cơ thiên lệch được nêu trong báo cáo).
+
+### Setup và chạy (từ thư mục gốc repo, Python 3.10+)
+
+```bash
+python -m pip install -r starter/requirements.txt          # có thể chậm vì kéo torch
+mkdir -p data/raw
+curl -L -o data/raw/principles-of-data-science.pdf \
+  https://assets.openstax.org/oscms-prodcms/media/documents/Principles-of-Data-Science-WEB.pdf
+python -X utf8 benchmark/build_questions.py                # ghi benchmark/questions.json (24 câu)
+python -X utf8 benchmark/verify_evidence.py                # kiểm tra evidence nằm trên trang gold
+cd starter
+python -X utf8 -m src.run                                  # ingest A/B, chạy A/B/C, ghi ../results/
+python -X utf8 -m src.audit                                # tạo bảng audit ../results/audit/
+python -X utf8 scripts/check_reingest.py                   # kiểm tra nạp lại / xóa chunk cũ
+```
+
+Kết quả: `results/traces.jsonl` (top-3 từng câu), `results/run_summary.json` (cấu hình, phiên bản, thời gian, Hit@1/Hit@3), `results/audit/*.csv`, `artifacts/experiment_log.csv`. Cấu trúc code: `starter/src/{ingestion,corpus,chunking,embeddings,store,evaluation,run,audit}.py`. Các file pgvector/Docker trong `starter/` không được dùng.

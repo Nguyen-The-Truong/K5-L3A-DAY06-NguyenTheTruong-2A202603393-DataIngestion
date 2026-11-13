@@ -2,3 +2,9 @@
 psycopg[binary]==3.3.8
 pypdf>=5,<7
 python-dotenv>=1,<2
+
+# Day 06 Chroma + local sentence-transformers (see README.md, section "Bài làm")
+chromadb==1.5.9
+sentence-transformers==6.3.0
+torch==2.14.1
+pymupdf==1.28.2

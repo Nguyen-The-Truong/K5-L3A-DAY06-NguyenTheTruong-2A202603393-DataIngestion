@@ -1,0 +1,218 @@
+﻿strategy,question_id,question,evidence_quote,top3_chunk_ids,top3_texts,score_0_2,reason,labeler
+A,t01,What is stratified sampling?,"Stratified sampling involves splitting the population into subgroups based on specified factors, such as age, area, income, or education level, and taking a random sample from each stratum in proportion to its size in the population.",pds-openstax-2025:p073-s2.2:fx00 | pds-openstax-2025:p076-s2.2:fx02 | pds-openstax-2025:p076-s2.2:fx03,"[1] p73: for quality control testing. In the political arena, simple random sampling is commonly used to select randomly registered voters for polls or surveys, ensuring equal representation and minimizing bias in the data collected. 2. Stratified sampling. Stratified sampling involves splitting the population into subgroups based on specified factors, such as age, area, income, or education level, and taking a random sample from each stratum in proportion to its size in the population. Stratified sampli
+---
+[2] p76: e sampling technique used by Mark is called stratified sampling. This involves dividing the population into subgroups or strata based on certain characteristics and then randomly selecting participants from each subgroup. This ensures that each subgroup is represented in the sample, providing a more accurate representation of the entire population. This type of sampling is often used in market research studies to get a more comprehensive understanding of consumer behavior and preferences. By usi
+---
+[3] p76: nding of consumer behavior and preferences. By using stratified sampling, Mark can make more reliable conclusions and recommendations for the new product launch based on the data he collects.",2,Rank 1 contains the full stratified-sampling definition from p73.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+A,t02,What is the main drawback of convenience sampling?,"However, it may not provide a representative sample as it is prone to selection bias",pds-openstax-2025:p073-s2.2:fx05 | pds-openstax-2025:p073-s2.2:fx04 | pds-openstax-2025:p072-s2.2:fx06,"[1] p73: less to achieve, and it is useful for exploratory studies. However, it may not provide a representative sample as it is prone to selection bias in that individuals who are more readily available or willing to participate may be overrepresented. An example of convenience sampling would be conducting a survey about a new grocery store in a busy shopping mall. A researcher stands in front of the store and approaches people who are coming out of the store to ask them about their shopping experience.
+---
+[2] p73: presentative sample of the state's student population without having to visit each individual school, saving time and resources. 4. Convenience sampling. Convenience sampling applies to selecting people or items for the sample based on their availability and convenience to the data science research. For example, a researcher may choose to survey students in their classroom or manipulate data from social media users. Convenience sampling is effortless to achieve, and it is useful for exploratory
+---
+[3] p72: , social media, or physically distributing questionnaires at the restaurant. It's crucial to make the survey easily accessible to the chosen sample to achieve a higher response rate. A number of sampling techniques and their advantages are described below. The most frequently used among these are simple random selection, stratified sampling, cluster sampling, and convenience sampling. 1. Simple random selection. Simple random selection is a statistical technique used to pick a representative sam",2,Rank 1 contains the selection-bias drawback of convenience sampling.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+A,t03,Which type of data compression permanently removes data considered irrelevant or redundant?,Lossy compression reduces the size of data by permanently extracting particular data that is considered irrelevant or redundant.,pds-openstax-2025:p098-s2.5:fx05 | pds-openstax-2025:p098-s2.5:fx06 | pds-openstax-2025:p098-s2.5:fx03,"[1] p98: on is classified into two categories, lossy and lossless: • Lossy compression reduces the size of data by permanently extracting particular data that is considered irrelevant or redundant. This method can significantly decrease file sizes, but it also results in a loss of some data. Lossy compression is often utilized for multimedia files and images, where slight modifications in quality may not be noticeable to the human eye. Examples of lossy compression include MP3 and JPEG. • Lossless compre
+---
+[2] p98: ompression include MP3 and JPEG. • Lossless compression aims to reduce file size without removing any data. This method achieves compression by finding patterns and redundancies in the data and representing them more efficiently. This allows for the reconstruction of the original data without any loss in quality. Lossless compression is commonly used for text and numerical data, where every piece of information is crucial. Examples of lossless compression include ZIP, RAR, and PNG. There are sev
+---
+[3] p98: large datasets by select a representative subset, or representative random sample. Preprocessing techniques covered in Data Cleaning and Preprocessing are also used to clean, normalize, and transform data to make sure it is consistent before it can be analyzed. This includes handling missing values, removing outliers, and standardizing data formats. In this section we will consider several other aspects of data management that are especially useful with big data, including data compression, dat",2,Rank 1 contains the definition of lossy compression (permanent removal).,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+A,t04,What cutoff value is typically used with the IQR to identify outliers?,These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset.,pds-openstax-2025:p127-s3.3:fx02 | pds-openstax-2025:p127-s3.3:fx00 | pds-openstax-2025:p128-s3.3:fx00,"[1] p127: iles and the IQR to calculate a lower and an upper bound for outliers. Then any data values below the lower bound or above the upper bound will be flagged as outliers. These data values should be further investigated to determine the nature of the outlier condition and whether the data values are valid or not. To calculate the lower and upper bounds for outliers, use the following formulas: These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset. EXAMPLE 3.12 Problem
+---
+[2] p127: The interquartile range (IQR) is a number that indicates the spread of the middle half, or the middle 50%, of the data. It is the difference between the third quartile, , and the first quartile, . Note that the IQR provides a measure of variability that excludes outliers. In Example 3.11, the IQR can be calculated as: Quartiles and the IQR can be used to flag possible outliers in a dataset. For example, if most employees at a company earn about $50,000 and the CEO of the company earns $2.5 milli
+---
+[3] p128: Now, calculate the interquartile range (IQR): Calculate the value of 1.5 interquartile range (IQR): Calculate the lower and upper bound for outliers: The lower bound for outliers is −201,625. Of course, no home price is less than −201,625, so no outliers are present for the lower end of the dataset. The upper bound for outliers is 1,159,375. The data value of 5,500,000 is greater than the upper bound of 1,159,375. Therefore, the home price of $5,500,000 is a potential outlier. This is important",2,"Rank 1 contains 'use 1.5 as a cutoff value'; the formulas themselves are missing from the PDF text, but the question only asks for the cutoff.","Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+A,t05,Which z-score values are used to flag outliers?,greater than +3 can be used to flag outliers,pds-openstax-2025:p128-s3.3:fx04 | pds-openstax-2025:p127-s3.3:fx02 | pds-openstax-2025:p116-s3.1:fx01,"[1] p128: n, the corresponding -score will be a positive value. -scores can also be used to identify outliers. Since -scores measure the number of standard deviations from the mean for a data value, a -score of 3 would indicate a data value that is 3 standard deviations above the mean. This would represent a data value that is significantly displaced from the mean, and typically, a -score less than −3 or a -score greater than +3 can be used to flag outliers.
+---
+[2] p127: iles and the IQR to calculate a lower and an upper bound for outliers. Then any data values below the lower bound or above the upper bound will be flagged as outliers. These data values should be further investigated to determine the nature of the outlier condition and whether the data values are valid or not. To calculate the lower and upper bounds for outliers, use the following formulas: These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset. EXAMPLE 3.12 Problem
+---
+[3] p116: of the other data values in the dataset. In the dataset given in Example 3.1, a pulse rate of 35 or 120 would be considered outlier data values since these pulse rates are significantly different as compared to the rest of the values in Example 3.1. We will see that there is a formal method for determining outliers, and in fact there are several methods to identify outliers in a dataset. The presence of outlier data values tends to disproportionally skew the mean and produce a potentially mislea",2,Rank 1 contains the z < -3 or z > +3 rule (the letter z is lost in extraction: '-score').,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+B,t01,What is stratified sampling?,"Stratified sampling involves splitting the population into subgroups based on specified factors, such as age, area, income, or education level, and taking a random sample from each stratum in proportion to its size in the population.",pds-openstax-2025:p076-s2.2:pg01 | pds-openstax-2025:p073-s2.2:pg00 | pds-openstax-2025:p072-s2.2:pg04,"[1] p76: The sampling technique used by Mark is called stratified sampling. This involves dividing the population into subgroups or strata based on certain characteristics and then randomly selecting participants from each subgroup. This ensures that each subgroup is represented in the sample, providing a more accurate representation of the entire population. This type of sampling is often used in market research studies to get a more comprehensive understanding of consumer behavior and preferences. By using stratified sampling, Mark can make more reliable conclusions and recommendations for the new product launch based on the data he collects.
+---
+[2] p73: for quality control testing. In the political arena, simple random sampling is commonly used to select randomly registered voters for polls or surveys, ensuring equal representation and minimizing bias in the data collected. 2. Stratified sampling. Stratified sampling involves splitting the population into subgroups based on specified factors, such as age, area, income, or education level, and taking a random sample from each stratum in proportion to its size in the population. Stratified sampling allows for a more accurate representation of the population as it ensures that all subgroups are adequately represented in the sample. This can be especially useful when the variables being studied vary significantly between the stratified groups. 3. Cluster sampling.
+---
+[3] p72: A number of sampling techniques and their advantages are described below. The most frequently used among these are simple random selection, stratified sampling, cluster sampling, and convenience sampling.
+
+1. Simple random selection. Simple random selection is a statistical technique used to pick a representative sample from a larger population. This process involves randomly choosing individuals or items from the population, ensuring that each selected member of the population has an identical chance of being contained in the sample. The main step in simple random selection is to define the population of interest and assign a unique identification number to each member. This could be done using a random number generator, a computer program designed to generate a sequence of random numbers, or a random number table, which lists numbers in a random sequence. The primary benefit of this technique is its ability to minimize bias and deliver a fair representation of the population.",2,Rank 2 contains the full definition; rank 1 is a worked example that also explains it.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+B,t02,What is the main drawback of convenience sampling?,"However, it may not provide a representative sample as it is prone to selection bias",pds-openstax-2025:p073-s2.2:pg03 | pds-openstax-2025:p073-s2.2:pg02 | pds-openstax-2025:p072-s2.2:pg02,"[1] p73: However, it may not provide a representative sample as it is prone to selection bias in that individuals who are more readily available or willing to participate may be overrepresented.
+
+An example of convenience sampling would be conducting a survey about a new grocery store in a busy shopping mall. A researcher stands in front of the store and approaches people who are coming out of the store to ask them about their shopping experience. The researcher only includes responses from those who agreed to participate, resulting in a sample that is convenient but may not be representative of the
+---
+[2] p73: An example of cluster sampling would be a study on the effectiveness of a new educational program in a state. The state is divided into clusters based on school districts. The researcher uses a random selection process to choose a sample of school districts and then collects data from all the schools within those districts. This method allows the researcher to obtain a representative sample of the state's student population without having to visit each individual school, saving time and resources. 4. Convenience sampling. Convenience sampling applies to selecting people or items for the sample based on their availability and convenience to the data science research. For example, a researcher may choose to survey students in their classroom or manipulate data from social media users. Convenience sampling is effortless to achieve, and it is useful for exploratory studies.
+---
+[3] p72: An example of a biased survey question in a survey conducted by a shampoo company might be ""Do you prefer our brand of shampoo over cheaper alternatives?"" This question is biased because it assumes that the respondent prefers the company's brand over others. A more unbiased and accurate question would be ""What factors do you consider when choosing a shampoo brand?"" This allows for a more detailed and accurate response. The biased question could have led to inflated results in favor of the company's brand.
+
+Sampling
+
+The next step in the data collection process is to choose a participant sample to ideally represent the restaurant's customer base. Sampling could be achieved by randomly selecting customers, using customer databases, or targeting specific demographics, such as age or location.",2,Rank 1 contains the drawback sentence and an example.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+B,t03,Which type of data compression permanently removes data considered irrelevant or redundant?,Lossy compression reduces the size of data by permanently extracting particular data that is considered irrelevant or redundant.,pds-openstax-2025:p098-s2.5:pg04 | pds-openstax-2025:p098-s2.5:pg03 | pds-openstax-2025:p098-s2.5:pg02,"[1] p98: • Lossy compression reduces the size of data by permanently extracting particular data that is considered irrelevant or redundant. This method can significantly decrease file sizes, but it also results in a loss of some data. Lossy compression is often utilized for multimedia files and images, where slight modifications in quality may not be noticeable to the human eye. Examples of lossy compression include MP3 and JPEG. • Lossless compression aims to reduce file size without removing any data. This method achieves compression by finding patterns and redundancies in the data and representing them more efficiently. This allows for the reconstruction of the original data without any loss in quality. Lossless compression is commonly used for text and numerical data, where every piece of information is crucial. Examples of lossless compression include ZIP, RAR, and PNG.
+---
+[2] p98: Data compression is a method of reducing file size while retaining essential information; it can be applied to many types of databases. Data compression is classified into two categories, lossy and lossless:
+---
+[3] p98: We have also already discussed a number of the techniques and strategies used to gain meaningful insights from big data. Survey Design and Implementation discussed sampling techniques that allow those working with data to analyze and examine large datasets by select a representative subset, or representative random sample. Preprocessing techniques covered in Data Cleaning and Preprocessing are also used to clean, normalize, and transform data to make sure it is consistent before it can be analyzed. This includes handling missing values, removing outliers, and standardizing data formats.
+
+In this section we will consider several other aspects of data management that are especially useful with big data, including data compression, data storage, data indexing, and chunking. In addition, we’ll discuss database management systems—software that allows for the organization, manipulation, and retrieval of data that is stored in a structured format—and cloud computing.
+
+Data Compression",2,Rank 1 contains the lossy-compression definition.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+B,t04,What cutoff value is typically used with the IQR to identify outliers?,These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset.,pds-openstax-2025:p127-s3.3:pg00 | pds-openstax-2025:p127-s3.3:pg01 | pds-openstax-2025:p128-s3.3:pg00,"[1] p127: The interquartile range (IQR) is a number that indicates the spread of the middle half, or the middle 50%, of the data. It is the difference between the third quartile, , and the first quartile, .
+
+Note that the IQR provides a measure of variability that excludes outliers.
+
+In Example 3.11, the IQR can be calculated as:
+
+Quartiles and the IQR can be used to flag possible outliers in a dataset. For example, if most employees at a company earn about $50,000 and the CEO of the company earns $2.5 million, then we consider the CEO’s salary to be an outlier data value because this salary is significantly different from all the other salaries in the dataset. An outlier data value can also be a value much lower than the other data values in a dataset, so if one employee only makes $15,000, then this employee’s low salary might also be considered an outlier.
+---
+[2] p127: To detect outliers, you can use the quartiles and the IQR to calculate a lower and an upper bound for outliers. Then any data values below the lower bound or above the upper bound will be flagged as outliers. These data values should be further investigated to determine the nature of the outlier condition and whether the data values are valid or not.
+
+To calculate the lower and upper bounds for outliers, use the following formulas:
+
+These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset.
+
+EXAMPLE 3.12
+
+Problem
+
+Calculate the IQR for the following 13 home prices and determine if any of the home prices values are potential outliers. Data values are in US dollars.
+
+389950, 230500, 158000, 479000, 639000, 114950, 5500000, 387000, 659000, 529000, 575000, 488800, 1095000
+
+Solution
+
+Order the data from smallest to largest.
+
+114950, 158000, 230500, 387000, 389950, 479000, 488800, 529000, 575000, 639000, 659000, 1095000, 5500000
+---
+[3] p128: Now, calculate the interquartile range (IQR):
+
+Calculate the value of 1.5 interquartile range (IQR):
+
+Calculate the lower and upper bound for outliers:
+
+The lower bound for outliers is −201,625. Of course, no home price is less than −201,625, so no outliers are present for the lower end of the dataset.
+
+The upper bound for outliers is 1,159,375. The data value of 5,500,000 is greater than the upper bound of 1,159,375. Therefore, the home price of $5,500,000 is a potential outlier. This is important because the presence of outliers could potentially indicate data errors or some other anomalies in the dataset that should be investigated. For example, there may have been a data entry error and a home price of $550,000 was erroneously entered as $5,500,000.
+
+-scores",2,Rank 2 contains the 1.5 cutoff sentence; rank 1 is the IQR definition (cutoff arrives one rank later).,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+B,t05,Which z-score values are used to flag outliers?,greater than +3 can be used to flag outliers,pds-openstax-2025:p128-s3.3:pg02 | pds-openstax-2025:p086-s2.4:pg03 | pds-openstax-2025:p127-s3.3:pg01,"[1] p128: Notice that when a measurement is below the mean, the corresponding -score will be a negative value. If the measurement is exactly equal to the mean, the corresponding -score will be zero. If the measurement is above the mean, the corresponding -score will be a positive value.
+
+-scores can also be used to identify outliers. Since -scores measure the number of standard deviations from the mean for a data value, a -score of 3 would indicate a data value that is 3 standard deviations above the mean. This would represent a data value that is significantly displaced from the mean, and typically, a -score less than −3 or a -score greater than +3 can be used to flag outliers.
+---
+[2] p86: 1. A survey participant forgetting to answer a question 2. A malfunction in data collection equipment resulting in missing values 3. A participant choosing not to answer a question due to sensitivity or discomfort
+
+An outlier is a data point that differs significantly from other data points in a given dataset. This can be due to human error, measurement error, or a true outlier value in the data. Outliers can skew statistical analysis and bias results, which is why it is important to identify and handle them properly before analysis.
+
+Missing data and outliers are common problems that can affect the accuracy and reliability of results. It is important to identify and handle these issues properly to ensure the integrity of the data and the validity of the analysis. You will find more details about outliers in Measures of Center, but here we summarize the
+---
+[3] p127: To detect outliers, you can use the quartiles and the IQR to calculate a lower and an upper bound for outliers. Then any data values below the lower bound or above the upper bound will be flagged as outliers. These data values should be further investigated to determine the nature of the outlier condition and whether the data values are valid or not.
+
+To calculate the lower and upper bounds for outliers, use the following formulas:
+
+These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset.
+
+EXAMPLE 3.12
+
+Problem
+
+Calculate the IQR for the following 13 home prices and determine if any of the home prices values are potential outliers. Data values are in US dollars.
+
+389950, 230500, 158000, 479000, 639000, 114950, 5500000, 387000, 659000, 529000, 575000, 488800, 1095000
+
+Solution
+
+Order the data from smallest to largest.
+
+114950, 158000, 230500, 387000, 389950, 479000, 488800, 529000, 575000, 639000, 659000, 1095000, 5500000",2,Rank 1 contains the +-3 z-score rule.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+C,t01,What is stratified sampling?,"Stratified sampling involves splitting the population into subgroups based on specified factors, such as age, area, income, or education level, and taking a random sample from each stratum in proportion to its size in the population.",pds-openstax-2025:p076-s2.2:pg01 | pds-openstax-2025:p073-s2.2:pg00 | pds-openstax-2025:p072-s2.2:pg04,"[1] p76: The sampling technique used by Mark is called stratified sampling. This involves dividing the population into subgroups or strata based on certain characteristics and then randomly selecting participants from each subgroup. This ensures that each subgroup is represented in the sample, providing a more accurate representation of the entire population. This type of sampling is often used in market research studies to get a more comprehensive understanding of consumer behavior and preferences. By using stratified sampling, Mark can make more reliable conclusions and recommendations for the new product launch based on the data he collects.
+---
+[2] p73: for quality control testing. In the political arena, simple random sampling is commonly used to select randomly registered voters for polls or surveys, ensuring equal representation and minimizing bias in the data collected. 2. Stratified sampling. Stratified sampling involves splitting the population into subgroups based on specified factors, such as age, area, income, or education level, and taking a random sample from each stratum in proportion to its size in the population. Stratified sampling allows for a more accurate representation of the population as it ensures that all subgroups are adequately represented in the sample. This can be especially useful when the variables being studied vary significantly between the stratified groups. 3. Cluster sampling.
+---
+[3] p72: A number of sampling techniques and their advantages are described below. The most frequently used among these are simple random selection, stratified sampling, cluster sampling, and convenience sampling.
+
+1. Simple random selection. Simple random selection is a statistical technique used to pick a representative sample from a larger population. This process involves randomly choosing individuals or items from the population, ensuring that each selected member of the population has an identical chance of being contained in the sample. The main step in simple random selection is to define the population of interest and assign a unique identification number to each member. This could be done using a random number generator, a computer program designed to generate a sequence of random numbers, or a random number table, which lists numbers in a random sequence. The primary benefit of this technique is its ability to minimize bias and deliver a fair representation of the population.",2,"Same index as B, no filter for this question: rank 2 holds the definition.","Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+C,t02,What is the main drawback of convenience sampling?,"However, it may not provide a representative sample as it is prone to selection bias",pds-openstax-2025:p073-s2.2:pg03 | pds-openstax-2025:p073-s2.2:pg02 | pds-openstax-2025:p072-s2.2:pg02,"[1] p73: However, it may not provide a representative sample as it is prone to selection bias in that individuals who are more readily available or willing to participate may be overrepresented.
+
+An example of convenience sampling would be conducting a survey about a new grocery store in a busy shopping mall. A researcher stands in front of the store and approaches people who are coming out of the store to ask them about their shopping experience. The researcher only includes responses from those who agreed to participate, resulting in a sample that is convenient but may not be representative of the
+---
+[2] p73: An example of cluster sampling would be a study on the effectiveness of a new educational program in a state. The state is divided into clusters based on school districts. The researcher uses a random selection process to choose a sample of school districts and then collects data from all the schools within those districts. This method allows the researcher to obtain a representative sample of the state's student population without having to visit each individual school, saving time and resources. 4. Convenience sampling. Convenience sampling applies to selecting people or items for the sample based on their availability and convenience to the data science research. For example, a researcher may choose to survey students in their classroom or manipulate data from social media users. Convenience sampling is effortless to achieve, and it is useful for exploratory studies.
+---
+[3] p72: An example of a biased survey question in a survey conducted by a shampoo company might be ""Do you prefer our brand of shampoo over cheaper alternatives?"" This question is biased because it assumes that the respondent prefers the company's brand over others. A more unbiased and accurate question would be ""What factors do you consider when choosing a shampoo brand?"" This allows for a more detailed and accurate response. The biased question could have led to inflated results in favor of the company's brand.
+
+Sampling
+
+The next step in the data collection process is to choose a participant sample to ideally represent the restaurant's customer base. Sampling could be achieved by randomly selecting customers, using customer databases, or targeting specific demographics, such as age or location.",2,Same as B.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+C,t03,Which type of data compression permanently removes data considered irrelevant or redundant?,Lossy compression reduces the size of data by permanently extracting particular data that is considered irrelevant or redundant.,pds-openstax-2025:p098-s2.5:pg04 | pds-openstax-2025:p098-s2.5:pg03 | pds-openstax-2025:p098-s2.5:pg02,"[1] p98: • Lossy compression reduces the size of data by permanently extracting particular data that is considered irrelevant or redundant. This method can significantly decrease file sizes, but it also results in a loss of some data. Lossy compression is often utilized for multimedia files and images, where slight modifications in quality may not be noticeable to the human eye. Examples of lossy compression include MP3 and JPEG. • Lossless compression aims to reduce file size without removing any data. This method achieves compression by finding patterns and redundancies in the data and representing them more efficiently. This allows for the reconstruction of the original data without any loss in quality. Lossless compression is commonly used for text and numerical data, where every piece of information is crucial. Examples of lossless compression include ZIP, RAR, and PNG.
+---
+[2] p98: Data compression is a method of reducing file size while retaining essential information; it can be applied to many types of databases. Data compression is classified into two categories, lossy and lossless:
+---
+[3] p98: We have also already discussed a number of the techniques and strategies used to gain meaningful insights from big data. Survey Design and Implementation discussed sampling techniques that allow those working with data to analyze and examine large datasets by select a representative subset, or representative random sample. Preprocessing techniques covered in Data Cleaning and Preprocessing are also used to clean, normalize, and transform data to make sure it is consistent before it can be analyzed. This includes handling missing values, removing outliers, and standardizing data formats.
+
+In this section we will consider several other aspects of data management that are especially useful with big data, including data compression, data storage, data indexing, and chunking. In addition, we’ll discuss database management systems—software that allows for the organization, manipulation, and retrieval of data that is stored in a structured format—and cloud computing.
+
+Data Compression",2,Same as B.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+C,t04,What cutoff value is typically used with the IQR to identify outliers?,These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset.,pds-openstax-2025:p127-s3.3:pg00 | pds-openstax-2025:p127-s3.3:pg01 | pds-openstax-2025:p128-s3.3:pg00,"[1] p127: The interquartile range (IQR) is a number that indicates the spread of the middle half, or the middle 50%, of the data. It is the difference between the third quartile, , and the first quartile, .
+
+Note that the IQR provides a measure of variability that excludes outliers.
+
+In Example 3.11, the IQR can be calculated as:
+
+Quartiles and the IQR can be used to flag possible outliers in a dataset. For example, if most employees at a company earn about $50,000 and the CEO of the company earns $2.5 million, then we consider the CEO’s salary to be an outlier data value because this salary is significantly different from all the other salaries in the dataset. An outlier data value can also be a value much lower than the other data values in a dataset, so if one employee only makes $15,000, then this employee’s low salary might also be considered an outlier.
+---
+[2] p127: To detect outliers, you can use the quartiles and the IQR to calculate a lower and an upper bound for outliers. Then any data values below the lower bound or above the upper bound will be flagged as outliers. These data values should be further investigated to determine the nature of the outlier condition and whether the data values are valid or not.
+
+To calculate the lower and upper bounds for outliers, use the following formulas:
+
+These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset.
+
+EXAMPLE 3.12
+
+Problem
+
+Calculate the IQR for the following 13 home prices and determine if any of the home prices values are potential outliers. Data values are in US dollars.
+
+389950, 230500, 158000, 479000, 639000, 114950, 5500000, 387000, 659000, 529000, 575000, 488800, 1095000
+
+Solution
+
+Order the data from smallest to largest.
+
+114950, 158000, 230500, 387000, 389950, 479000, 488800, 529000, 575000, 639000, 659000, 1095000, 5500000
+---
+[3] p128: Now, calculate the interquartile range (IQR):
+
+Calculate the value of 1.5 interquartile range (IQR):
+
+Calculate the lower and upper bound for outliers:
+
+The lower bound for outliers is −201,625. Of course, no home price is less than −201,625, so no outliers are present for the lower end of the dataset.
+
+The upper bound for outliers is 1,159,375. The data value of 5,500,000 is greater than the upper bound of 1,159,375. Therefore, the home price of $5,500,000 is a potential outlier. This is important because the presence of outliers could potentially indicate data errors or some other anomalies in the dataset that should be investigated. For example, there may have been a data entry error and a home price of $550,000 was erroneously entered as $5,500,000.
+
+-scores",2,Filter section=3.3; evidence chunk is in the top-3 (rank 2) and all hits are in 3.3.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
+C,t05,Which z-score values are used to flag outliers?,greater than +3 can be used to flag outliers,pds-openstax-2025:p128-s3.3:pg02 | pds-openstax-2025:p127-s3.3:pg01 | pds-openstax-2025:p127-s3.3:pg00,"[1] p128: Notice that when a measurement is below the mean, the corresponding -score will be a negative value. If the measurement is exactly equal to the mean, the corresponding -score will be zero. If the measurement is above the mean, the corresponding -score will be a positive value.
+
+-scores can also be used to identify outliers. Since -scores measure the number of standard deviations from the mean for a data value, a -score of 3 would indicate a data value that is 3 standard deviations above the mean. This would represent a data value that is significantly displaced from the mean, and typically, a -score less than −3 or a -score greater than +3 can be used to flag outliers.
+---
+[2] p127: To detect outliers, you can use the quartiles and the IQR to calculate a lower and an upper bound for outliers. Then any data values below the lower bound or above the upper bound will be flagged as outliers. These data values should be further investigated to determine the nature of the outlier condition and whether the data values are valid or not.
+
+To calculate the lower and upper bounds for outliers, use the following formulas:
+
+These formulas typically use 1.5 as a cutoff value to identify outliers in a dataset.
+
+EXAMPLE 3.12
+
+Problem
+
+Calculate the IQR for the following 13 home prices and determine if any of the home prices values are potential outliers. Data values are in US dollars.
+
+389950, 230500, 158000, 479000, 639000, 114950, 5500000, 387000, 659000, 529000, 575000, 488800, 1095000
+
+Solution
+
+Order the data from smallest to largest.
+
+114950, 158000, 230500, 387000, 389950, 479000, 488800, 529000, 575000, 639000, 659000, 1095000, 5500000
+---
+[3] p127: The interquartile range (IQR) is a number that indicates the spread of the middle half, or the middle 50%, of the data. It is the difference between the third quartile, , and the first quartile, .
+
+Note that the IQR provides a measure of variability that excludes outliers.
+
+In Example 3.11, the IQR can be calculated as:
+
+Quartiles and the IQR can be used to flag possible outliers in a dataset. For example, if most employees at a company earn about $50,000 and the CEO of the company earns $2.5 million, then we consider the CEO’s salary to be an outlier data value because this salary is significantly different from all the other salaries in the dataset. An outlier data value can also be a value much lower than the other data values in a dataset, so if one employee only makes $15,000, then this employee’s low salary might also be considered an outlier.",2,Filter section=3.3; evidence chunk is in the top-3.,"Nguyễn Thế Trường (tác giả); nhãn do Claude đề xuất, tác giả nhận làm nhãn của mình"
