@@ -55,7 +55,7 @@ def write_manifest(units, info) -> dict:
     manifest = {
         "source_id": DOCUMENT_ID,
         "title": "Principles of Data Science (OpenStax)",
-        "authors": "Dr. Shaun V. Ault, Dr. Soohyun Kim, Dr. Larry Musolino, Dr. Nikolaus Pesendorfer (OpenStax)",
+        "authors": "Senior Contributing Authors: Shaun V. Ault, Soohyun Nam Liao, Larry Musolino (per the book, PDF page 15; other contributing authors not listed here)",
         "source_path_or_url": SOURCE,
         "download_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Principles-of-Data-Science-WEB.pdf",
         "landing_page": "https://openstax.org/details/books/principles-data-science",

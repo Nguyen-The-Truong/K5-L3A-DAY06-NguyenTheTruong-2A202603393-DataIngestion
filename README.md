@@ -69,4 +69,6 @@ python -X utf8 -m src.audit                                # tạo bảng audit 
 python -X utf8 scripts/check_reingest.py                   # kiểm tra nạp lại / xóa chunk cũ
 ```
 
-Kết quả: `results/traces.jsonl` (top-3 từng câu), `results/run_summary.json` (cấu hình, phiên bản, thời gian, Hit@1/Hit@3), `results/audit/*.csv`, `artifacts/experiment_log.csv`. Cấu trúc code: `starter/src/{ingestion,corpus,chunking,embeddings,store,evaluation,run,audit}.py`. Các file pgvector/Docker trong `starter/` không được dùng.
+Kết quả: `results/traces.jsonl` (top-3 từng câu), `results/run_summary.json` (cấu hình, phiên bản, thời gian, Hit@1/Hit@3), `results/audit/*.csv`, `artifacts/experiment_log.csv`. Cấu trúc code: `starter/src/{ingestion,corpus,chunking,embeddings,store,evaluation,run,audit}.py`.
+
+**Demo (sau khi đã chạy `src.run`):** giao diện web `python -X utf8 scripts/demo_ui.py` rồi mở http://127.0.0.1:8000; hoặc dòng lệnh `python -X utf8 scripts/demo_query.py "What is stratified sampling?" --strategy C --section 2.2`. Bản review nhãn bằng tiếng Việt: `results/audit/REVIEW_VI.md`; tính lại số audit: `python -X utf8 scripts/summarize_audit.py`. Các file pgvector/Docker trong `starter/` không được dùng.

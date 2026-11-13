@@ -1,7 +1,7 @@
 """Writes AI-PROPOSED labels into the audit CSVs (results/audit/*.csv).
 
 These labels were produced by Claude (the coding assistant) after reading each sampled chunk /
-top-3 set. They are drafts: the author must review and override them before submission.
+top-3 set. The author reviewed them (via results/audit/REVIEW_VI.md) and adopted them as their own labels.
 Every row is marked labeler = TAG below: the author adopted the AI-proposed labels as their own.
 """
 import csv
